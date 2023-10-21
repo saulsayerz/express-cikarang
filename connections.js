@@ -1,3 +1,5 @@
+const mongoURL = process.env.MONGO_URL || 'mongodb+srv://saulsayers:bUHzDZNL3WHbWpAj@cluster0.1ju3xpp.mongodb.net/cikarangdb?retryWrites=true&w=majority';
+
 const mongoose = require("mongoose");
 
     const makeNewConnection = (uri) => {
@@ -23,6 +25,6 @@ const mongoose = require("mongoose");
     };
 
     const dbConnection = 
-     makeNewConnection('mongodb+srv://saulsayers:bUHzDZNL3WHbWpAj@cluster0.1ju3xpp.mongodb.net/cikarangdb?retryWrites=true&w=majority');
+     makeNewConnection(mongoURL);
 
     module.exports = dbConnection;
