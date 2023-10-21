@@ -23,6 +23,6 @@ const mongoose = require("mongoose");
     };
 
     const dbConnection = 
-     makeNewConnection('mongodb+srv://saulsayers:bUHzDZNL3WHbWpAj@cluster0.1ju3xpp.mongodb.net/?retryWrites=true&w=majority');
+     makeNewConnection('mongodb+srv://saulsayers:bUHzDZNL3WHbWpAj@cluster0.1ju3xpp.mongodb.net/cikarangdb?retryWrites=true&w=majority');
 
     module.exports = dbConnection;
